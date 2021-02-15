@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<canvas id="myCanvas" width="500" height="800"></canvas>
+<script src="game.js"></script>
+<script src="display.js"></script>
+<script src="engine.js"></script>
+<script src="controller.js"></script>
+<script src="main.js"></script>
+
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  canvas(id="ctx" width="500" height="500" style="border:1px solid #000000; touch-action: manipulation;")
+
+  script(src= '/projects/chinese-song-association/js/game.js')
+  script(src= '/projects/chinese-song-association/js/display.js')
+  script(src= '/projects/chinese-song-association/js/engine.js')
+  script(src= '/projects/chinese-song-association/js/controller.js')
+  script(src= '/projects/chinese-song-association/js/main.js')

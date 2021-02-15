@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  canvas()
+
+  script(src= '/projects/platformer/js/game.js')
+  script(src= '/projects/platformer/js/display.js')
+  script(src= '/projects/platformer/js/engine.js')
+  script(src= '/projects/platformer/js/controller.js')
+  script(src= '/projects/platformer/js/main.js')

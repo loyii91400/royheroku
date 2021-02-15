@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  canvas(id="ctx" width="500" height="500" style="border:1px solid #000000;")
+
+  script(src= '/projects/original-smart-dots/js/goal.js')
+  script(src= '/projects/original-smart-dots/js/Brain.js')
+  script(src= '/projects/original-smart-dots/js/dot.js')
+  script(src= '/projects/original-smart-dots/js/population.js')
+  script(src= '/projects/original-smart-dots/js/obstacle.js')
+  script(src= '/projects/original-smart-dots/js/main.js')
