@@ -1,9 +1,10 @@
 extends layout
 
 block content
+  title = title
   h1= title
   p Welcome to #{title}
-  canvas(id="ctx" width="500" height="500" style="border:1px solid #000000;")
+  canvas(id="ctx", width="500", height="500", style="border:1px solid #000000;")
 
   script(src= '/projects/original-smart-dots/js/goal.js')
   script(src= '/projects/original-smart-dots/js/Brain.js')

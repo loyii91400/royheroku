@@ -11,7 +11,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  canvas(id="ctx" width="500" height="500" style="border:1px solid #000000; touch-action: manipulation;")
+  canvas(id="ctx",width="500",height="500",style="border:1px solid #000000; touch-action: manipulation;")
 
   script(src= '/projects/chinese-song-association/js/game.js')
   script(src= '/projects/chinese-song-association/js/display.js')

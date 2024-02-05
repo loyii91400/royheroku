@@ -3,13 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  canvas(id= "ctx" width= "500" height= "500" style= "border:1px solid #000000;")
+  canvas(id= "ctx", width= "500", height= "500", style= "border:1px solid #000000;")
 
-  input(type='button' value='Add Goal' onclick= 'goalButtonClicked();' id="goalButton")
-  input(type='button' value='Add Start' onclick= 'startButtonClicked();' id="startButton")
-  input(type='button' value='Add Wall' onclick= 'wallButtonClicked();' id="wallButton")
-  input(type='button' value='Begin Simulation' onclick= 'beginButtonClicked();' id="beginButton")
-  input(type='range' id='gridValue'  min='10' max='50' step='1' onchange="gridValueChanged(this.value);" value='10')
+  input(type='button',value='Add Goal', onclick= 'goalButtonClicked();', id="goalButton")
+  input(type='button', value='Add Start', onclick= 'startButtonClicked();', id="startButton")
+  input(type='button', value='Add Wall', onclick= 'wallButtonClicked();', id="wallButton")
+  input(type='button', value='Begin Simulation', onclick= 'beginButtonClicked();', id="beginButton")
+  input(type='range', id='gridValue',  min='10', max='50', step='1', onchange="gridValueChanged(this.value);", value='10')
   script(src= '/projects/smart-dots/dot.js')
   script(src= '/projects/smart-dots/wall.js')
   script(src= '/projects/smart-dots/start.js')
